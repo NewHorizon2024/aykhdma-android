@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.activity.SplashActivity">
+    xmlns="http://schemas.android.com/apk/res/android"
+    tools:context=".ui.activity.Ma">
 
     <TextView
         android:layout_width="match_parent"
@@ -40,7 +41,6 @@
 
 
 
-
         <CheckBox
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -55,7 +55,6 @@
 
 
     <Button
-        android:id="@+id/bt_login"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginLeft="@dimen/margin_left"
@@ -64,6 +63,7 @@
         android:layout_weight="1"
         android:background="@color/colorPrimary"
         android:text="@string/login_text"
+        android:onClick="Login"
         android:textColor="@color/textColor"
         android:textSize="15sp"
         android:textStyle="bold" />
@@ -78,7 +78,7 @@
             android:layout_marginLeft="@dimen/margin_left"
             android:layout_weight="1"
             android:background="@color/colorPrimary"
-            android:text="@string/register_data"
+            android:text=" تسجيل بياناتي"
             android:textColor="@color/textColor"
             android:textSize="15sp"
             android:textStyle="bold" />
