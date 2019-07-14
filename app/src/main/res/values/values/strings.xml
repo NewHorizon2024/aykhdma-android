@@ -1,6 +1,6 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <string name="app_name">Elmasriya</string>
-    <string name="et_mobile" tools:ignore="ExtraTranslation">موبايل</string>
+    <string name="et_mobile">موبايل</string>
     <string name="mobile_hint">موبيل</string>
     <string name="password_hint">كلمة المرور</string>
     <string name="forget_password">نسيت كلمة المرور</string>
@@ -14,7 +14,6 @@
     <string name="address">العنوان</string>
     <string name="define_your_place">حدد موقعك</string>
     <string name="verification_hint">- - - - - -</string>
-    <string name="register_data">تسجيل بياناتي</string>
     <string-array name="city">
         <item>شروق</item>
         <item>مدينتي</item>

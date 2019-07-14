@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    layout_width="match_parent"
+    layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns="http://schemas.android.com/apk/res/android"
+    tools:context=".ui.activity.NewAccount">
+
+    <TextView
+        layout_width="match_parent"
+        layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="حساب جديد"
+        android:textColor="@color/textColor"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        layout_width="match_parent"
+        layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_weight="1"
+        android:hint="@string/name" />
+
+    <EditText
+        layout_width="match_parent"
+        layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_weight="1"
+        android:hint="@string/email" />
+
+    <EditText
+        layout_width="match_parent"
+        layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_weight="1"
+        android:hint="@string/address" />
+
+    <LinearLayout
+        layout_width="match_parent"
+        layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:orientation="horizontal">
+
+        <EditText
+            layout_width="0dp"
+            layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:layout_weight="1"
+            android:hint="@string/define_your_place" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            layout_width="0dp"
+            layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        layout_width="match_parent"
+        layout_height="0dp"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        <EditText
+            layout_width="0dp"
+            layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:layout_weight="0.5"
+            android:hint="@string/mobile_hint" />
+
+        <ImageView
+            layout_width="0dp"
+            layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginRight="@dimen/margin_right"
+            android:layout_marginBottom="@dimen/image_view_margin_bottom"
+            android:layout_weight="1"
+            android:scaleType="fitStart"
+            android:src="@drawable/blank" />
+
+    </LinearLayout>
+
+    <Button
+        layout_width="match_parent"
+        layout_height="0dp"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:text="@string/new_account_text"
+        android:textColor="@color/textColor"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        layout_width="match_parent"
+        layout_height="0dp"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:text=" تخطي"
+        android:textColor="@color/textColor"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
