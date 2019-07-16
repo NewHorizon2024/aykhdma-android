@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    layout_height="match_parent"
-    layout_width="match_parent"
-    xmlns="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.Verification"
     android:weightSum="4"
-    tools:context=".ui.activity.Verification">
-
+    xmlns:tools="http://schemas.android.com/tools">
     <TextView
-        layout_height="0dp"
-        layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
         android:layout_marginBottom="@dimen/margin_bottom"
         android:layout_weight="0.5"
         android:background="@color/colorPrimaryDark"
@@ -21,14 +19,14 @@
         android:textStyle="bold" />
 
     <LinearLayout
-        layout_height="0dp"
-        layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
         android:layout_weight="1.5"
         android:orientation="vertical">
 
         <TextView
-            layout_height="0dp"
-            layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
             android:layout_marginLeft="@dimen/margin_left"
             android:layout_marginTop="@dimen/margin_top"
             android:layout_marginRight="@dimen/margin_right"
@@ -42,8 +40,8 @@
             android:textStyle="bold" />
 
         <EditText
-            layout_height="0dp"
-            layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="@dimen/margin_left"
             android:layout_marginRight="@dimen/margin_right"
@@ -52,8 +50,8 @@
             android:hint="@string/verification_hint" />
 
         <View
-            layout_height="0dp"
-            layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
             android:layout_marginLeft="@dimen/margin_left"
             android:layout_marginRight="@dimen/margin_right"
             android:layout_marginBottom="@dimen/margin_bottom"
@@ -61,8 +59,8 @@
             android:background="@android:color/black" />
 
         <Button
-            layout_height="0dp"
-            layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
             android:layout_marginLeft="@dimen/margin_left"
             android:layout_marginRight="@dimen/margin_right"
             android:layout_marginBottom="@dimen/margin_bottom"
@@ -73,5 +71,4 @@
             android:textSize="15sp"
             android:textStyle="bold" />
     </LinearLayout>
-
 </LinearLayout>
