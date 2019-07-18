@@ -12,13 +12,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.activity.MainActivity"/>
+        <activity android:name=".ui.activity.SP_NewAccount">
+
+        </activity>
+        <activity android:name=".ui.activity.MainActivity" />
         <activity android:name=".ui.activity.Verification" />
         <activity android:name=".ui.activity.NewAccount" />
         <activity android:name=".ui.activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
+                <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

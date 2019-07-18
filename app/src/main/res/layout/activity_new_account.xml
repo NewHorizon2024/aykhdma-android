@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:tools="http://schemas.android.com/tools"
-    layout_width="match_parent"
-    layout_height="match_parent"
-    android:orientation="vertical"
+<LinearLayout android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns="http://schemas.android.com/apk/res/android"
-    tools:context=".ui.activity.NewAccount">
-
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.NewAccount"
+    xmlns:tools="http://schemas.android.com/tools">
     <TextView
-        layout_width="match_parent"
-        layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/margin_bottom"
         android:layout_weight="1"
         android:background="@color/colorPrimaryDark"
@@ -20,8 +18,8 @@
         android:textStyle="bold" />
 
     <EditText
-        layout_width="match_parent"
-        layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="@dimen/margin_bottom"
         android:layout_marginTop="@dimen/margin_top"
@@ -31,8 +29,8 @@
         android:hint="@string/name" />
 
     <EditText
-        layout_width="match_parent"
-        layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="@dimen/margin_bottom"
         android:layout_marginLeft="@dimen/margin_left"
@@ -41,8 +39,8 @@
         android:hint="@string/email" />
 
     <EditText
-        layout_width="match_parent"
-        layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="@dimen/margin_bottom"
         android:layout_marginLeft="@dimen/margin_left"
@@ -51,8 +49,8 @@
         android:hint="@string/address" />
 
     <LinearLayout
-        layout_width="match_parent"
-        layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:layout_marginTop="@dimen/margin_top"
         android:layout_marginRight="@dimen/margin_right"
@@ -61,8 +59,8 @@
         android:orientation="horizontal">
 
         <EditText
-            layout_width="0dp"
-            layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_marginLeft="@dimen/margin_left"
             android:layout_marginRight="@dimen/margin_right"
             android:layout_weight="1"
@@ -70,14 +68,14 @@
 
         <Spinner
             android:id="@+id/spinner"
-            layout_width="0dp"
-            layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"/>
     </LinearLayout>
 
     <LinearLayout
-        layout_width="match_parent"
-        layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_marginLeft="@dimen/margin_left"
         android:layout_marginTop="@dimen/margin_top"
         android:layout_marginRight="@dimen/margin_right"
@@ -86,17 +84,17 @@
         android:orientation="horizontal">
 
         <EditText
-            layout_width="0dp"
-            layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginLeft="@dimen/margin_left"
-            android:layout_marginRight="@dimen/margin_right"
+            android:layout_marginStart="@dimen/margin_left"
+            android:layout_marginEnd="@dimen/margin_right"
             android:layout_weight="0.5"
             android:hint="@string/mobile_hint" />
 
         <ImageView
-            layout_width="0dp"
-            layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_marginLeft="@dimen/margin_left"
             android:layout_marginTop="@dimen/margin_top"
@@ -109,8 +107,8 @@
     </LinearLayout>
 
     <Button
-        layout_width="match_parent"
-        layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_marginLeft="@dimen/margin_left"
         android:layout_marginRight="@dimen/margin_right"
         android:layout_marginBottom="@dimen/margin_bottom"
@@ -123,8 +121,8 @@
 
 
     <Button
-        layout_width="match_parent"
-        layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_marginLeft="@dimen/margin_left"
         android:layout_marginRight="@dimen/margin_right"
         android:layout_marginBottom="@dimen/margin_bottom"

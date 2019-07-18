@@ -15,6 +15,23 @@
     <string name="define_your_place">حدد موقعك</string>
     <string name="verification_hint">- - - - - -</string>
     <string name="register_data">تسجيل بياناتي</string>
+    <string name="full_name">الاسم بالكامل</string>
+    <string name="contact_numbers">ارقام للتواصل</string>
+    <string name="id_number">الرقم القومى / جواز سفر</string>
+    <string name="commercial_registration_number">رقم السجل التجارى</string>
+    <string name="tax_card_number">رقم البطاقة الضريبية</string>
+    <string name="delivery">دليفرى</string>
+    <string name="technical">فنى</string>
+    <string name="id_img">صورة تحقيق الشخصية</string>
+    <string name="comercial_registration_img">صورة السجل التجارى</string>
+    <string name="card_number_img">صورة البطاقة الضريبية</string>
+    <string name="other_entries">اضافات اخرى</string>
+    <string name="agree_with_conditions">أوافق على شروط الاستخدام</string>
+    <string name="comercial_name">الاسم التجارى</string>
+    <string name="addrees_accurate">العنوان بالتفصيل</string>
+    <string name="activity_logo">شعار النشاط</string>
+    <string name="service_providing">الخدمات المقدمة</string>
+    <string name="register">تسجيل</string>
     <string-array name="city">
         <item>شروق</item>
         <item>مدينتي</item>
