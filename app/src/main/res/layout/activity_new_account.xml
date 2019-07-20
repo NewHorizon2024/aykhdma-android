@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".ui.activity.NewAccount">
-
+    tools:context=".ui.activity.NewAccount"
+    xmlns:tools="http://schemas.android.com/tools">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,66 +17,24 @@
         android:textSize="25sp"
         android:textStyle="bold" />
 
-    <LinearLayout
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_marginTop="@dimen/margin_top"
         android:layout_marginLeft="@dimen/margin_left"
         android:layout_marginRight="@dimen/margin_right"
-        android:layout_marginBottom="@dimen/margin_bottom"
-        android:layout_weight="2"
-        android:orientation="horizontal">
-
-        <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cv_profile_image"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_centerInParent="true"
-                android:elevation="12dp"
-                app:cardCornerRadius="40dp">
-
-                <ImageView
-                    android:id="@+id/img_profile"
-                    android:layout_width="match_parent"
-                    android:layout_height="80dp"
-                    android:layout_alignTop="@+id/cv_profile_image"
-                    android:layout_gravity="center_horizontal"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/account_circle" />
-            </androidx.cardview.widget.CardView>
-
-            <ImageView
-                android:id="@+id/img_plus"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_alignBaseline="@+id/cv_profile_image"
-                android:layout_alignBottom="@+id/cv_profile_image"
-                android:layout_centerInParent="true"
-                android:layout_toLeftOf="@+id/cv_profile_image"
-                android:src="@drawable/ic_plus" />
-
-        </RelativeLayout>
-
-        <EditText
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:hint="@string/name" />
-
-    </LinearLayout>
+        android:layout_weight="1"
+        android:hint="@string/name" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/margin_bottom"
         android:layout_marginLeft="@dimen/margin_left"
         android:layout_marginRight="@dimen/margin_right"
-        android:layout_marginBottom="@dimen/margin_bottom"
         android:layout_weight="1"
         android:hint="@string/email" />
 
@@ -87,12 +42,36 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/margin_bottom"
         android:layout_marginLeft="@dimen/margin_left"
         android:layout_marginRight="@dimen/margin_right"
-        android:layout_marginBottom="@dimen/margin_bottom"
         android:layout_weight="1"
         android:hint="@string/address" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:layout_weight="1"
+            android:hint="@string/define_your_place" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -101,46 +80,30 @@
         android:layout_marginTop="@dimen/margin_top"
         android:layout_marginRight="@dimen/margin_right"
         android:layout_marginBottom="@dimen/margin_bottom"
-        android:layout_weight="1"
+        android:layout_weight="3"
         android:orientation="horizontal">
 
-        <LinearLayout
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin_left"
+            android:layout_marginEnd="@dimen/margin_right"
+            android:layout_weight="0.5"
+            android:hint="@string/mobile_hint" />
+
+        <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_gravity="center"
             android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginTop="@dimen/margin_top"
             android:layout_marginRight="@dimen/margin_right"
-            android:layout_weight="1">
+            android:layout_marginBottom="@dimen/image_view_margin_bottom"
+            android:layout_weight="1"
+            android:scaleType="fitStart"
+            android:src="@drawable/blank" />
 
-            <ImageView
-                android:id="@+id/iv_location_picker"
-                android:src="@drawable/ic_mode_edit_black_24dp"
-                android:layout_gravity="bottom"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <androidx.appcompat.widget.AppCompatImageButton
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:scaleType="center"
-                android:src="@drawable/location" />
-
-            <TextView
-                android:padding="@dimen/find_location_padding"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:hint="@string/define_your_place" />
-
-
-        </LinearLayout>
-
-        <Spinner
-            android:id="@+id/spinner"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"></Spinner>
     </LinearLayout>
 
     <Button
@@ -150,7 +113,7 @@
         android:layout_marginRight="@dimen/margin_right"
         android:layout_marginBottom="@dimen/margin_bottom"
         android:layout_weight="1"
-        android:background="@drawable/buttonbordershadow"
+        android:background="@color/colorPrimary"
         android:text="@string/new_account_text"
         android:textColor="@color/textColor"
         android:textSize="15sp"
@@ -164,7 +127,7 @@
         android:layout_marginRight="@dimen/margin_right"
         android:layout_marginBottom="@dimen/margin_bottom"
         android:layout_weight="1"
-        android:background="@drawable/buttonbordershadow"
+        android:background="@color/colorPrimary"
         android:text=" تخطي"
         android:textColor="@color/textColor"
         android:textSize="15sp"

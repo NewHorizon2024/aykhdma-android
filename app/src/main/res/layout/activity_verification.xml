@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    tools:context=".ui.activity.Verification"
     android:weightSum="4"
-    tools:context=".ui.activity.Verification">
-
+    xmlns:tools="http://schemas.android.com/tools">
     <TextView
-        android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_width="match_parent"
         android:layout_marginBottom="@dimen/margin_bottom"
         android:layout_weight="0.5"
         android:background="@color/colorPrimaryDark"
@@ -20,20 +19,20 @@
         android:textStyle="bold" />
 
     <LinearLayout
+        android:layout_height="0dp"
         android:layout_width="match_parent"
         android:layout_weight="1.5"
-        android:orientation="vertical"
-        android:layout_height="0dp">
+        android:orientation="vertical">
 
         <TextView
-            android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_width="match_parent"
             android:layout_marginLeft="@dimen/margin_left"
             android:layout_marginTop="@dimen/margin_top"
             android:layout_marginRight="@dimen/margin_right"
             android:layout_marginBottom="@dimen/margin_bottom"
             android:layout_weight="1"
-            android:background="@drawable/buttonbordershadow"
+            android:background="@color/colorPrimary"
             android:gravity="center_vertical|center_horizontal"
             android:text=" من فضلك ادخل كود التحقق "
             android:textColor="@color/textColor"
@@ -41,8 +40,8 @@
             android:textStyle="bold" />
 
         <EditText
-            android:layout_width="wrap_content"
             android:layout_height="0dp"
+            android:layout_width="match_parent"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="@dimen/margin_left"
             android:layout_marginRight="@dimen/margin_right"
@@ -51,27 +50,25 @@
             android:hint="@string/verification_hint" />
 
         <View
-            android:background="@android:color/black"
-            android:layout_width="match_parent"
-            android:layout_weight="0.1"
             android:layout_height="0dp"
-            android:layout_marginLeft="@dimen/margin_left"
-            android:layout_marginRight="@dimen/margin_right"
-            android:layout_marginBottom="@dimen/margin_bottom"/>
-
-        <Button
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
             android:layout_marginLeft="@dimen/margin_left"
             android:layout_marginRight="@dimen/margin_right"
             android:layout_marginBottom="@dimen/margin_bottom"
-            android:background="@drawable/buttonbordershadow"
+            android:layout_weight="0.1"
+            android:background="@android:color/black" />
+
+        <Button
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
             android:text=" تاكيد الكود"
             android:textColor="@color/textColor"
             android:textSize="15sp"
             android:textStyle="bold" />
     </LinearLayout>
-
 </LinearLayout>
-
