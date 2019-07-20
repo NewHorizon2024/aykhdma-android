@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.NewAccount">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="حساب جديد"
+        android:textColor="@color/textColor"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_profile_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:elevation="12dp"
+                app:cardCornerRadius="40dp">
+
+                <ImageView
+                    android:id="@+id/img_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_alignTop="@+id/cv_profile_image"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/account_circle" />
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/img_plus"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/cv_profile_image"
+                android:layout_alignBottom="@+id/cv_profile_image"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/cv_profile_image"
+                android:src="@drawable/ic_plus" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:hint="@string/name" />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_weight="1"
+        android:hint="@string/email" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_weight="1"
+        android:hint="@string/address" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_location_picker"
+                android:src="@drawable/ic_mode_edit_black_24dp"
+                android:layout_gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="center"
+                android:src="@drawable/location" />
+
+            <TextView
+                android:padding="@dimen/find_location_padding"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:hint="@string/define_your_place" />
+
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></Spinner>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_weight="1"
+        android:background="@drawable/buttonbordershadow"
+        android:text="@string/new_account_text"
+        android:textColor="@color/textColor"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_weight="1"
+        android:background="@drawable/buttonbordershadow"
+        android:text=" تخطي"
+        android:textColor="@color/textColor"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
