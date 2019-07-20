@@ -1,7 +1,11 @@
 package com.mostathmer.aykhdma.model;
 
-public class Region {
+import io.realm.RealmObject;
+import io.realm.annotations.PrimaryKey;
 
+public class Region extends RealmObject {
+
+    @PrimaryKey
     private int id;
     private String name;
     private String name_en;
@@ -10,6 +14,9 @@ public class Region {
         this.id = id;
         this.name = name;
         this.name_en = name_en;
+    }
+
+    public Region() {
     }
 
     public int getId() {

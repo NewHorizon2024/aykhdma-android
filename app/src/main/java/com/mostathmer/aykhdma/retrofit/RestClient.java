@@ -11,7 +11,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RestClient {
 
-    private static final String BASE_URL = ""; //TODO: add base URL here
+    private static final String BASE_URL = "http://creativeya.com/as/api/";
 
 
     private static OkHttpClient httpClient = new OkHttpClient.Builder()
